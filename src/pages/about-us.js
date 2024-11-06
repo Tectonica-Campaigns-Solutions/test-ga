@@ -2,11 +2,11 @@ import React from "react";
 import useRegionSelector from "../context/useRegionSelector";
 import { Link } from "gatsby";
 
-const Index = () => {
+const AboutUs = () => {
   const { region, updateRegion } = useRegionSelector();
 
   return (
-    <div>
+    <>
       <nav
         style={{
           display: "flex",
@@ -31,7 +31,7 @@ const Index = () => {
           About us
         </Link>
       </nav>
-      <h1>Homepage. Region: {region}</h1>
+      <h1>About us page. Region: {region}</h1>
 
       <section>
         <h3>Update region:</h3>
@@ -74,8 +74,8 @@ const Index = () => {
           </span>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
-export default Index;
+export default AboutUs;
