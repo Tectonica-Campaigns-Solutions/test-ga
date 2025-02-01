@@ -15,12 +15,12 @@ export const onRouteUpdate = ({ location }) => {
   // const hasAcceptedCookies = cookies.some((cookie) => cookie.startsWith('acceptCookies='));
   const hasAcceptedCookies = true;
 
-  // if (window.gtag && region && hasAcceptedCookies) {
-  //   console.log(`Set ${region} for ${location.pathname}`);
+  if (window.gtag && region && hasAcceptedCookies) {
+    console.log(`Set ${region} for ${location.pathname}`);
 
-  //   window.gtag("event", "page_view", {
-  //     page_path: location.pathname,
-  //     [REGION_DIMENSION]: region,
-  //   });
-  // }
+    window.gtag("event", "page_view", {
+      page_path: location.pathname,
+      [REGION_DIMENSION]: region,
+    });
+  }
 };

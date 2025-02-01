@@ -43,11 +43,6 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "	GTM-K65SG8W9",
-        defaultDataLayer: function () {
-          return {
-            pageType: 'holaa',
-          }
-        },
       }
     }
   ]
