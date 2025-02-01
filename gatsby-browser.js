@@ -19,8 +19,7 @@ export const onRouteUpdate = ({ location }) => {
     console.log(`Set ${region} for ${location.pathname}`);
 
     window.gtag("event", "page_view", {
-      page_path: location.pathname,
-      [REGION_DIMENSION]: region,
+      region_v3: region,
     });
   }
 };
