@@ -1,5 +1,5 @@
 import React from "react";
-import useRegionSelector from "../context/useRegionSelector";
+import useRegionSelector from "../../context/useRegionSelector";
 import { Link, navigate } from "gatsby";
 
 const Index = () => {
